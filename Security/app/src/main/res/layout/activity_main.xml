@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.shravankumar.security.MainActivity">
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Security App"
+        android:gravity="center"
+        android:paddingTop="110dp"
+        android:paddingBottom="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Security is our priority"
+        android:textSize="30dp"
+        android:layout_below="@id/welcome"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/home_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:layout_below="@id/welcome"
+        android:onClick="main_login"
+        />
+    <Button
+        android:id="@+id/home_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Register as Resident"
+        android:textStyle="bold"
+        android:layout_below="@id/home_sign_in"
+        android:onClick="main_register"
+        />
+    <Button
+        android:id="@+id/security_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_sign_up"
+        android:text="Register as Security"
+        android:onClick="security_register"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

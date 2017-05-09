@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shravankumar.security.SecurityHome">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/security"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security"
+                android:background="#E5E4E2"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+
+
+            <Button
+                android:id="@+id/security_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:layout_below="@id/security"
+                android:background="#E5E4E2"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                />
+            <Button
+                android:id="@+id/validate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Validate Visitor"
+                android:textColor="#FFFFFF"
+                android:background="#A4C639"
+                android:layout_below="@id/security_notifications"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:onClick="Validate"
+                />
+
+            <Button
+                android:id="@+id/validate_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/validate"
+                android:text="Validate OTP"
+                android:textColor="#FFFFFF"
+                android:background="#A4C639"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:onClick="enterotp"
+
+                />
+
+            <Button
+                android:id="@+id/security_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/validate_otp"
+                android:text="Log Out"
+                android:textColor="#FFFFFF"
+                android:background="#A4C639"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:onClick="securityLogout"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/security_logout"
+                android:text="Edit Profile"
+                android:textColor="#FFFFFF"
+                android:background="#A4C639"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:onClick="edit_security_profile"
+                />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

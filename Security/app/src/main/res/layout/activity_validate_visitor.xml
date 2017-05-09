@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shravankumar.security.ValidateVisitor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/details_visitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details of visitor"
+            android:background="#E5E4E2"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginLeft="0dp"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="0dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            />
+
+        <Button
+            android:id="@+id/security_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resident Availability"
+            android:background="#A4C639"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="check_available"
+            android:layout_below="@id/details_visitor"
+            />
+        <TextView
+            android:id="@+id/yes_no_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes/no"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/security_back"
+            android:layout_below="@id/details_visitor"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_back"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            >
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/details_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_name"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:hint="Phone"
+            android:inputType="phone"
+            >
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/details_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_phone"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            >
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/details_resident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_address"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:hint="Resident Name"
+            android:inputType="textPersonName"
+            >
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/door_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details_resident"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:hint="Door Number"
+            android:inputType="textPostalAddress"
+            >
+            <requestFocus/>
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/door_number"
+            android:hint="Purpose of Visit"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+
+            >
+            <requestFocus/>
+
+        </EditText>
+        <Button
+            android:id="@+id/send_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Request"
+            android:layout_below="@id/purpose"
+            android:layout_marginTop="5dp"
+            android:background="#41b8a9"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

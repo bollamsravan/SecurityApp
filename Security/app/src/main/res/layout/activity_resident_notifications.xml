@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shravankumar.security.ResidentNotifications">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Details of Visitor"
+                android:background="#CFCFC4"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="25dp"
+                />
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details"
+                android:text="Visitor Name"
+                android:ems="10"
+                android:layout_marginBottom="25dp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PhoneNumber"
+                android:layout_below="@id/person_name"
+                android:layout_marginBottom="25dp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_below="@id/phone"
+                android:layout_marginBottom="40dp">
+                <requestFocus/>
+            </TextView>
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:text="Accept"
+                android:layout_marginLeft="60dp"
+                />
+
+            <Button
+                android:id="@+id/reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reject"
+                android:layout_below="@id/address"
+                android:layout_toRightOf="@id/accept"
+                android:layout_marginLeft="65dp"
+                />
+            <Button
+                android:id="@+id/exit_visitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send OTP to Exit Visitor"
+                android:layout_below="@id/accept"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
